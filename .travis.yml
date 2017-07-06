@@ -2,7 +2,7 @@ language: php
 php:
   - '7.1'
 before_script:
-  - php -S 127.0.0.1:8888 -t ./ >/dev/null 2>&1 &
+  - php -S 127.0.0.1:8888 -t ./websupporter/codeception-ci/ >/dev/null 2>&1 &
   - composer install
 script:
   - vendor/bin/codecept run
