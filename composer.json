@@ -1,0 +1,26 @@
+{
+    "name": "inpsyde/codeception",
+    "description": "An experiment suite for codeception",
+    "require-dev": {
+        "codeception/codeception": "2.3.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Inpsyde",
+            "email": "d.remer@inpsyde.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inpsyde\\Codeception\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
