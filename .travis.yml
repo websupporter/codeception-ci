@@ -6,9 +6,7 @@ language: php
 cache:
   apt: true
 
-# 5.6 is required for Codeception.
 php:
-    - 5.6
     - 7.0
 
 # Run against regular and multisite.
@@ -19,23 +17,6 @@ env:
 sudo: false
 
 matrix:
-    include:
-        - php: hhvm
-          env: WP_MULTISITE=0
-          sudo: required
-          dist: trusty
-          group: edge
-          addons:
-            apt:
-              packages:
-              - mysql-server-5.6
-              - mysql-client-core-5.6
-              - mysql-client-5.6
-        - php: nightly
-          env: WP_MULTISITE=0
-    allow_failures:
-        - php: hhvm
-        - php: nightly
     fast_finish: true
 
 # Disable x-debug to speed up things
