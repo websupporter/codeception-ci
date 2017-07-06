@@ -17,6 +17,6 @@ class FirstCest
 	 */
     public function tryToTest( AcceptanceTester $i ) {
 	    $i->amOnPage( '/' );
-	    $i->see( 'Welcome' );
+	    $i->see( 'Hello World' );
     }
 }
