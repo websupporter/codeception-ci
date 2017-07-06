@@ -50,7 +50,7 @@ before_script:
 
 # Run main commands
 script:
-  - composer test
+  - vendor/bin/codecept run
 
 #after_script:
 
