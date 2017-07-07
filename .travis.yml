@@ -21,8 +21,6 @@ php:
 
 matrix:
   fast_finish: true
-  allow_failures:
-    - php: 7.0
 
 
 # We don't want to run linux commands as super user
